@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Mensaje from './Prueba';
+
+const Cadena = (param)=>{
+    return(
+      <h1 ><center>Hola {param.nombre} tienes {param.edad} años</center></h1>
+    ); 
+}
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Cadena nombre='Pepe' edad= {18} />
+    <Mensaje col="red "msj='Hola marcopolo'/>
     </div>
   );
 }
